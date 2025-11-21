@@ -1060,7 +1060,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                   >
                     <div class="relative w-full">
                       <div
-                        [innerHTML]="feature.icon"
+                        [innerHTML]="getSafeHtml(feature.icon)"
                         class="w-8 h-8 mx-auto"
                       ></div>
                       <button
