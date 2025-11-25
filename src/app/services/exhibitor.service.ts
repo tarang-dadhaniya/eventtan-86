@@ -8,7 +8,21 @@ export interface Exhibitor {
   hallNo: string;
   stallNo: string;
   registrationCode: string;
+  phone?: string;
+  email?: string;
+  socialMedia?: {
+    blogRss: boolean;
+    facebook: boolean;
+    twitter: boolean;
+  };
+  blogRssUrl?: string;
+  facebookUrl?: string;
+  exhibitorsFor?: string;
+  website?: string;
+  description?: string;
   companyLogo?: string;
+  documentName?: string;
+  productImageNames?: string[];
 }
 
 @Injectable({
