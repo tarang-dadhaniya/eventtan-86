@@ -636,7 +636,7 @@ interface FeaturedImage {
                     <img
                       [src]="image.preview"
                       [alt]="'Featured image ' + (i + 1)"
-                      class="w-20 h-20 rounded object-cover"
+                      class="w-20 h-20 rounded object-cover border border-[#E9EBEC]"
                     />
                     <button
                       type="button"
