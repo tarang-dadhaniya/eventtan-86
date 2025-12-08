@@ -905,7 +905,7 @@ export class AddSponsorsModalComponent {
     sponsorsFor: "",
     website: "",
     description: "",
-    documentName: "",
+    documentNames: [] as string[],
   };
 
   toggleSocialMediaDropdown(): void {
