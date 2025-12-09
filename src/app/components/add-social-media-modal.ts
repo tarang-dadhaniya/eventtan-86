@@ -273,6 +273,40 @@ import { FormsModule } from "@angular/forms";
                     class="w-full h-[50px] pl-[70px] pr-5 border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-[#434349] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
                   />
                 </div>
+
+                <!-- Twitter URL -->
+                <div *ngIf="formData.socialMedia.twitter" class="relative">
+                  <div
+                    class="absolute left-0 top-0 w-[50px] h-[50px] bg-[#F5F5F5] rounded-l flex items-center justify-center pointer-events-none z-10"
+                  >
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_294_6176)">
+                        <path
+                          d="M20.1494 4.39638C19.4111 4.74466 18.6156 4.98186 17.7778 5.08278C18.6368 4.56118 19.2919 3.73818 19.5891 2.77138C18.7913 3.25638 17.8989 3.60466 16.9399 3.80218C16.1844 3.00538 15.1055 2.5 13.8915 2.5C11.5725 2.5 9.71222 4.36028 9.71222 6.67928C9.71222 7.02038 9.75222 7.35138 9.82888 7.66758C6.52444 7.51618 3.63666 5.93578 1.72111 3.48458C1.32888 4.15858 1.10222 4.95958 1.10222 5.81278C1.10222 7.44478 1.97555 8.88018 3.31555 9.65878C2.66222 9.63938 2.03777 9.47598 1.50222 9.18798V9.24038C1.50222 11.3022 2.86777 13.0318 4.74999 13.4438C4.37222 13.5398 3.97444 13.5958 3.56111 13.5958C3.27333 13.5958 2.99333 13.5683 2.71888 13.5162C3.28888 15.2146 4.77777 16.4612 6.57111 16.4982C5.22888 17.6302 3.47999 18.3138 1.56666 18.3138C1.21111 18.3138 0.869439 18.2926 0.533325 18.2486C2.35111 19.474 4.62444 20.3 7.10666 20.3C13.8804 20.3 17.1044 13.6656 17.1044 7.75838C17.1044 7.59418 17.0999 7.43118 17.0921 7.26998C17.9089 6.68198 18.6402 5.95498 19.2344 5.1242C18.5489 5.41538 17.8089 5.61718 17.0355 5.70718Z"
+                          fill="#353846"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_294_6176">
+                          <rect width="22" height="22" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <input
+                    type="url"
+                    [(ngModel)]="formData.urls.twitter"
+                    name="twitterUrl"
+                    placeholder="Enter Twitter URL"
+                    class="w-full h-[50px] pl-[70px] pr-5 border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-[#434349] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
+                  />
+                </div>
               </div>
             </div>
           </div>
