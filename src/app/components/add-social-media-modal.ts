@@ -187,7 +187,7 @@ import { FormsModule } from "@angular/forms";
             <!-- URL Section -->
             <div
               *ngIf="
-                editMode || formData.socialMedia.blogRss || formData.socialMedia.facebook
+                editMode || formData.socialMedia.blogRss || formData.socialMedia.facebook || formData.socialMedia.twitter
               "
             >
               <label
