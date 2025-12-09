@@ -3466,6 +3466,7 @@ export class EventSetupComponent implements OnInit {
     private informationService: InformationService,
     private sponsorService: SponsorService,
     private socialMediaService: SocialMediaService,
+    private imageGalleryService: ImageGalleryService,
   ) {}
 
   getSafeHtml(html: string): SafeHtml {
