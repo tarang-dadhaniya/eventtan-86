@@ -734,7 +734,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
 
                 <!-- Date and Time Zone -->
                 <div
-                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6"
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6"
                 >
                   <!-- Start Date -->
                   <div class="flex flex-col">
