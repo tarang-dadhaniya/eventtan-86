@@ -151,7 +151,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
 
         <div class="flex-1 overflow-auto bg-main-bg">
           <div class="px-2 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
-            <div class="max-w-[1366px] mx-auto">
+            <div class="max-w-full sm:max-w-full lg:max-w-[1366px] mx-auto">
               <!-- Tab Navigation -->
               <div class="flex items-center justify-center gap-0 mb-6 sm:mb-8 flex-wrap">
                 <button
