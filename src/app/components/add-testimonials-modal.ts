@@ -608,6 +608,18 @@ export class AddTestimonialsModalComponent implements OnChanges {
     this.close.emit();
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    // Reset form when modal closes
+    if (changes['isOpen'] && !changes['isOpen'].currentValue && changes['isOpen'].previousValue) {
+      this.resetForm();
+    }
+
+    // Reset form when opening for new testimonial (not edit mode)
+    if (changes['editMode'] && !changes['editMode'].currentValue) {
+      this.resetForm();
+    }
+  }
+
   private resetForm(): void {
     this.formData = {
       firstName: "",
