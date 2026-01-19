@@ -167,11 +167,8 @@ interface FeaturedImage {
               />
             </div>
 
-            <!-- Featured Images -->
-            <div>
-              <label class="block text-base font-medium text-[#212529] mb-[7px]"
-                >Featured Images</label
-              >
+            <!-- Featured Images (shown only for Standard type) -->
+            <div *ngIf="formData.type === 'Standard'">
               <div
                 class="border border-dashed border-[#B9BBBC] rounded min-h-[120px] p-5 relative"
               >
